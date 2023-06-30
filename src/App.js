@@ -14,6 +14,11 @@ import {Form }  from './components/Form';
 import './myAppStyles.css'
 import styles from './myAppStyles.module.css'
 import { FormExample } from './FormExample';
+import { FormDetail } from './components/FormDetail';
+import { FragmemtDemo } from './components/FragmemtDemo';
+import { Table } from './components/Table';
+import { FragmentList } from './components/FragmentList';
+import LifeCycleA from './components/LifeCycleA';
 //tag name and file may be different from component name;but they should be same 
 
 function App() {
@@ -32,7 +37,12 @@ function App() {
         <h1 className='error'>Error</h1>
         <h1 className={styles.success}>Success</h1> */}
         {/* <Form/> */}
-        <FormExample/>
+        {/* <FormExample/> */}
+        {/* <FormDetail/> */}
+        {/* <FragmemtDemo/> */}
+        {/* <Table/> */}
+        {/* <FragmentList/> */}
+        <LifeCycleA/>
     </div>
   );
 }
