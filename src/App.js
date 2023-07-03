@@ -19,6 +19,11 @@ import { FragmemtDemo } from './components/FragmemtDemo';
 import { Table } from './components/Table';
 import { FragmentList } from './components/FragmentList';
 import LifeCycleA from './components/LifeCycleA';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import { RefDemo } from './components/RefDemo';
+import { FocusInput } from './components/FocusInput';
+import { FRParentInput } from './components/FRParentInput';
 //tag name and file may be different from component name;but they should be same 
 
 function App() {
@@ -42,7 +47,12 @@ function App() {
         {/* <FragmemtDemo/> */}
         {/* <Table/> */}
         {/* <FragmentList/> */}
-        <LifeCycleA/>
+        {/* <LifeCycleA/> */}
+        {/* <PureComp/> */}
+        {/* <ParentComp/> */}
+        {/* <RefDemo/> */}
+        {/* <FocusInput/> */}
+        <FRParentInput/>
     </div>
   );
 }
