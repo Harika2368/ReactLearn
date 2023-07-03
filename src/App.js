@@ -24,6 +24,9 @@ import ParentComp from './components/ParentComp';
 import { RefDemo } from './components/RefDemo';
 import { FocusInput } from './components/FocusInput';
 import { FRParentInput } from './components/FRParentInput';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { Hero } from './components/Hero';
+import { PortalDemo } from './components/PortalDemo';
 //tag name and file may be different from component name;but they should be same 
 
 function App() {
@@ -52,9 +55,22 @@ function App() {
         {/* <ParentComp/> */}
         {/* <RefDemo/> */}
         {/* <FocusInput/> */}
-        <FRParentInput/>
+        {/* <FRParentInput/> */}
+        {/* <ErrorBoundary>
+          <Hero heroName='Batman'/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Superman'/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Joker'/>
+        </ErrorBoundary> */}
+        <PortalDemo/>
+
     </div>
   );
 }
 
 export default App;
+//https://codesandbox.io/s/00254q4n6p - Event Bubbling
+//https://codepen.io/gareaon/pen/jGBWpE-
