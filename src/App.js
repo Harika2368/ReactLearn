@@ -27,6 +27,15 @@ import { FRParentInput } from './components/FRParentInput';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { Hero } from './components/Hero';
 import { PortalDemo } from './components/PortalDemo';
+import  ClickCounter  from './components/ClickCounter';
+import  HoverCounter  from './components/HoverCounter';
+import UpdatedComponent from './components/withCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
+import CompnentC from './components/CompnentC';
+import { UserProvider } from './components/userContext';
 //tag name and file may be different from component name;but they should be same 
 
 function App() {
@@ -65,12 +74,28 @@ function App() {
         <ErrorBoundary>
           <Hero heroName='Joker'/>
         </ErrorBoundary> */}
-        <PortalDemo/>
+        {/* <PortalDemo/> */}
+        {/* <ClickCounter name='CGG'/>
+        <HoverCounter name='Hii'/> */}
+        {/* <ClickCounter2/>
+        <HoverCounter2/>
+        <User render={(isLoggedIn)=>isLoggedIn?'CGG':'Guest'}/> */}
+        {/* <CounterTwo>{(count,incrementCount)=>
+        (<ClickCounter2 count={count} incrementCount={incrementCount}/>)
+        }
+        </CounterTwo>
+        <CounterTwo>{(count,incrementCount)=>
+        (<HoverCounter2 count={count} incrementCount={incrementCount}/>)
+        }
+        </CounterTwo> */}
+        {/* 2. */}
+        <UserProvider value='CGG'><CompnentC/></UserProvider> {/*Particular value*/}
+         {/* <CompnentC/>  */}   {/*For default values */}
 
     </div>
   );
 }
 
 export default App;
-//https://codesandbox.io/s/00254q4n6p - Event Bubbling
+//https://codesandbox.io/s/00254q4n6p -
 //https://codepen.io/gareaon/pen/jGBWpE-
